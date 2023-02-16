@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    <h1>Submit a message </h1>
+{% endblock %}
+
+{% block content %}
+{% if message=="" %}
+<p>Once you submit a message, it will redirect you to the messages 
+    webpage where you can see all the submitted messages. 
+</p>
+    <form method="post" enctype="multipart/form-data">
+        <label for="message">Message:</label><br>
+        <input type="text" id="message" name="message"><br>
+        <label for="name">Your name or username:</label><br>
+        <input type="text" id="name" name="name"><br><br>
+        <input type="submit" value="Submit">
+    </form> 
+{% else %}
+<p>{{message}}</p>
+{% endif %}
+{% endblock %}
+
