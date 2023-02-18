@@ -10,10 +10,10 @@
     webpage where you can see all the submitted messages. 
 </p>
     <form method="post" enctype="multipart/form-data">
+        <label for="name">Name or Nickname:</label><br>
+        <input type="text" id="name" name="name"><br>
         <label for="message">Message:</label><br>
-        <input type="text" id="message" name="message"><br>
-        <label for="name">Your name or username:</label><br>
-        <input type="text" id="name" name="name"><br><br>
+        <input type="text" id="message" name="message"><br><br>
         <input type="submit" value="Submit">
     </form> 
 {% else %}

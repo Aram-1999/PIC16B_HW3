@@ -7,9 +7,9 @@
 {% block content %}
 <ul>
     {% for message in messages%}
-    <li>{{message[2]}} <br>
-        -{{message[1]}}
-    </li>
+    <li><span id="message">{{message[2]}}</span><br>
+        <span id="name">-{{message[1]}}</span>
+    </li> <br>
     {% endfor %}
 </ul>
 {% endblock %}
